@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family:'Montserrat', sans-serif; ;
+}
+a{
+    text-decoration: none;
+}
+/* utility classes */
+.color-red{
+    color: crimson;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ################ hero section #################### */
+#hero{
+     background:url('/images/hero-bg.png');
+     background-size: cover;
+     background-position: top center;
+     position: relative;
+     z-index:1;
+}
+#hero::after{ 
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    opacity: 0.5;
+    z-index:-1;
+}
+#hero h1{
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 1rem;
+}
+#hero a{
+    font-size: 2rem;
+    color: crimson;
+    border: 2px solid crimson ;
+    display:    inline-block;
+    /* text-align: center; */
+    padding: 10px 30px;
+    /* color: crimson; */
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+#hero a:hover{
+    color: #fff;
+    background: crimson;
+}
+#hero .color-red{
+    color: crimson;
+}
+
+
